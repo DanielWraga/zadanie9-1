@@ -1,13 +1,12 @@
-var a = 5,
-	h = 4;
-	getTriangleArea
+function getTriangleArea(a, h) {
+ 	if ( (a <= 0) || (h <= 0) ) {
+		return 'wynik nieprawidlowy';
+	}  
 
-//function getTriangleArea(a, h) {}
-
-if ( (a <= 0) || (h <= 0) ) {
-	alert ('wynik nieprawidlowy');
-}  
- function getTriangleArea(a, h) {
- 	return (a * h / 2)
+ 	return a * h / 2;
  }
- console.log( getTriangleArea(10,6) )
+ console.log( getTriangleArea(10,6) );
+ var triangle1Area = getTriangleArea(1, 5);
+ var triangle2Area = getTriangleArea(14, 17);
+ var triangle3Area = getTriangleArea(17, 25);
+ console.log(triangle1Area, triangle2Area, triangle3Area);
